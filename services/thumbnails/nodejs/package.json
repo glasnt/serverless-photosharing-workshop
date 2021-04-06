@@ -3,14 +3,20 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "lint": "eslint --ext *.js --ext test/*.js",
+    "fix": "eslint --fix --ext *.js --ext test/*.js"
   },
   "dependencies": {
-    "@google-cloud/storage": "^4.0.0",
-    "@google-cloud/firestore": "^3.4.1",
+    "@google-cloud/firestore": "^4.9.8",
+    "@google-cloud/storage": "^5.8.3",
+    "bluebird": "^3.5.0",
     "body-parser": "^1.19.0",
     "express": "^4.16.4",
-    "bluebird": "^3.5.0",
     "imagemagick": "^0.1.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-google": "^0.14.0"
   }
 }
